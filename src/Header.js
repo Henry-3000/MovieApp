@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React from "react";
 import img from './img/wallpaper.jpg'
 import movieIcon from './img/movieIcon.jpg'
@@ -39,7 +40,7 @@ const Header = () => {
                             <h2 className="jTag">Parabellum</h2>
                         </div>
                         <div class="container">
-                            <img src={imdb} width="35px" height="17px"/><span className="ratingTag">86.0/100</span> <span className="ratingTag" style={{marginLeft: 30+'px'}}><img src={tomato} height="17px" width="16px"/></span><span className="ratingTag" style={{marginLeft: 15+'px'}}>97%</span>
+                            <img src={imdb} width="35px" height="17px" alt="img"/><span className="ratingTag">86.0/100</span> <span className="ratingTag" style={{marginLeft: 30+'px'}}><img src={tomato} height="17px" width="16px" alt="tomato"/></span><span className="ratingTag" style={{marginLeft: 15+'px'}}>97%</span>
                         </div>
                         <div className="container" style={{width: 302+'px', marginTop: '18px', marginLeft: 0+'px'}}>
                             <span className="synopsis1">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</span>

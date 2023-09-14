@@ -1,7 +1,7 @@
-import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MovieDetails from './MovieDetails';
+import './App.css';
 import { LandingPage } from './landing page';
 const App = () => {
   return (

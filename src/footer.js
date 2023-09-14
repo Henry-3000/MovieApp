@@ -3,8 +3,6 @@ import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
-  FaYoutube,
-  FaRegCopyright
 } from 'react-icons/fa';
 import './foot.css'
 
@@ -18,9 +16,9 @@ export default function Footer() {
             </div>
 
             <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li className="ms-3"><a class="text-muted" href="#"></a><FaFacebookF/></li>
-            <li className="ms-3"><a class="text-muted" href="#"></a><FaInstagram/></li>
-            <li className="ms-3"><a class="text-muted" href=""></a><FaTwitter/></li>
+            <li className="ms-3"><button class="text-muted" href="#"><FaFacebookF/></button></li>
+            <li className="ms-3"><button class="text-muted" href="#"><FaInstagram/></button></li>
+            <li className="ms-3"><button class="text-muted" href=""><FaTwitter/></button></li>
             </ul>
         </footer>
     </div>
