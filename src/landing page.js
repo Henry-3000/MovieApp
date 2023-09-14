@@ -6,7 +6,7 @@ import './index.css'
 import Header from './Header'
 import Footer from "./footer";
 
-export const LandingPage = () => {
+const LandingPage = () => {
     const [movieData, setMovieData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -20,7 +20,6 @@ export const LandingPage = () => {
                 //const lengthArr = PopularMovies.length;
                 const randomMovies = PopularMovies.slice(0, 10)
                 setLoading(false);
-
                 setMovieData(randomMovies);
 
             } catch (error) {
@@ -59,3 +58,5 @@ export const LandingPage = () => {
         </div>
     );
 }
+
+export default LandingPage;
