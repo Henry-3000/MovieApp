@@ -37,7 +37,7 @@ const MovieDetails = () => {
 
 
     return(
-        <div className="fluid-container m-4 p-4 App" style={{backgroundColor:"gray"}}>
+        <div className="fluid-container m-4 p-4 App border" style={{backgroundColor:"indianred", borderRadius: "10px"}}>
             <h1 data-testid="movie-title">{movieDetails.title || movieDetails.original_name}</h1>
             <p data-testid="movie-release-date">{movieDetails.release_date || movieDetails.first_air_date}</p>
             <p data-testid="movie-runtime">{movieDetails.runtime || "0"} minutes</p>
