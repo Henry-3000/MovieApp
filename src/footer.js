@@ -3,24 +3,32 @@ import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
+  FaYoutube,
 } from 'react-icons/fa';
 import './foot.css'
 
 export default function Footer() {
   return (
   <>
-    <div class="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div className="col-md-4 d-flex align-items-center">
-            <span className="mb-3 mb-md-0 text-muted">&copy; 2023 Designed by Henry3000</span>
-            </div>
-
-            <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li className="ms-3"><button class="text-muted" href="#"><FaFacebookF/></button></li>
-            <li className="ms-3"><button class="text-muted" href="#"><FaInstagram/></button></li>
-            <li className="ms-3"><button class="text-muted" href=""><FaTwitter/></button></li>
-            </ul>
+    <div class="container mt-4">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center  border-top">
+        <ul className="nav col-md-12 justify-content-center list-unstyled d-flex mt-4">
+            <li className="ms-3"><span class="btn text-black" href=""><FaFacebookF/></span></li>
+            <li className="ms-3"><span class="btn text-black" href=""><FaInstagram/></span></li>
+            <li className="ms-3"><span class="btn text-black" href=""><FaTwitter/></span></li>
+            <li className="ms-3"><span class="btn text-black" href=""><FaYoutube/></span></li>
+          </ul>
         </footer>
+        <div className="d-flex flex-wrap justify-content-between align-items-center">
+          <div className="nav col-md-12 justify-content-center d-flex align-items-center">
+              <span className="ms-4 btn text-black">Conditions Of Use</span>
+              <span className="ms-4 btn text-black">Privacy & Use</span>
+              <span className="ms-4 btn text-black">Press Room</span>
+          </div>
+        </div>
+        <div className='justify-content-center d-flex align-items-center mt-4'>
+          <span className="mb-3 mb-md-0 text-black">&copy; 2023 MovieApp by Henry3000</span>
+        </div>
     </div>
   </>
   );
