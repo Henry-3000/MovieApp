@@ -43,32 +43,31 @@ const MovieDetails = () => {
         <div className="d-flex flex-shrink-0 p-3 bg-light" style={{width: "280px"}}>
         <ul className="nav nav-pills flex-column mb-auto" style={{marginTop:"80px"}}>
         <li className="nav-item">
-            <a href="" class="nav-link text-black p-2" aria-current="page">
+            <button href="" class="nav-link text-black p-2" aria-current="page">
                 <i class="fa fa-home" aria-hidden="true"> </i>
                 <span className="p-4">Home</span>
-            </a>
+            </button>
         </li>
         <hr/>
         <li>
-            // eslint-disable-next-line
-            <a href="" className="nav-link text-dark p-2">
+            <button className="nav-link text-dark p-2">
             <i class="fa fa-file-movie-o" aria-hidden="true"></i>
             <span className="p-4">Movies</span>
-            </a>
+            </button>
         </li>
         <hr/>
         <li>
-            <a href="" className="nav-link link-dark p-2">
+            <button href="" className="nav-link link-dark p-2">
             <i class="fa fa-tv" aria-hidden="true"></i>
             <span className="p-4">Tv Series</span>
-            </a>
+            </button>
         </li>
         <hr/>
         <li>
-            <a href="" className="nav-link link-dark p-2">
+            <button href="" className="nav-link link-dark p-2">
             <i class="fa fa-calendar" aria-hidden="true"></i>
             <span className="p-4">Upcoming</span>
-            </a>
+            </button>
         </li>
         <hr/>
         <li>
@@ -80,10 +79,10 @@ const MovieDetails = () => {
             </div>
         </li>
         <li>
-        <a href="" className="nav-link link-dark p-2">
+        <button href="" className="nav-link link-dark p-2">
             <i class="fa fa-mobile" aria-hidden="true"></i>
             <span className="p-4">Logout</span>
-            </a>
+            </button>
         </li>
         </ul>
         <div className="" style={{marginLeft:"50px"}}>
