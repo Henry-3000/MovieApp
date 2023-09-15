@@ -2,6 +2,10 @@
   font-family: DM sans;
 }
 
+body, div{
+  font-family: DM sans;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

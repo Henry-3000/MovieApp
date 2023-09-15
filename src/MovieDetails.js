@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom';
 import './App.css'
 import axios from 'axios';
 
+
 const MovieDetails = () => {
     const {id} = useParams();
     const [movieDetails, setMovieDetails] = useState(null);
@@ -37,17 +38,67 @@ const MovieDetails = () => {
 
 
     return(
-        <div className="fluid-container m-4 p-4 App border" style={{backgroundColor:"indianred", borderRadius: "10px"}}>
-            <div className="d-flex flex-wrap justify-content-between align-items-center">
-            <img className="col-md-12 justify-content-center d-flex align-items-center" data-testid="movie-poster-path" src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`} style={{margin:"auto", height:"450px", width:"600px"}} alt="img1"/>
+        <>
+        <div className="fluid-container App border" style={{borderRadius: "10px"}}>
+        <div className="d-flex flex-shrink-0 p-3 bg-light" style={{width: "280px"}}>
+        <ul className="nav nav-pills flex-column mb-auto" style={{marginTop:"80px"}}>
+        <li className="nav-item">
+            <a href="" class="nav-link text-black p-2" aria-current="page">
+                <i class="fa fa-home" aria-hidden="true"> </i>
+                <span className="p-4">Home</span>
+            </a>
+        </li>
+        <hr/>
+        <li>
+            // eslint-disable-next-line
+            <a href="" className="nav-link text-dark p-2">
+            <i class="fa fa-file-movie-o" aria-hidden="true"></i>
+            <span className="p-4">Movies</span>
+            </a>
+        </li>
+        <hr/>
+        <li>
+            <a href="" className="nav-link link-dark p-2">
+            <i class="fa fa-tv" aria-hidden="true"></i>
+            <span className="p-4">Tv Series</span>
+            </a>
+        </li>
+        <hr/>
+        <li>
+            <a href="" className="nav-link link-dark p-2">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span className="p-4">Upcoming</span>
+            </a>
+        </li>
+        <hr/>
+        <li>
+            <div className="container border mt-4 p-3" style={{width:"250px",height:"220px", backgroundColor:"pink",  borderRadius:"20px", fontSize:"15px", fontWeight:"bold"}}>
+                <p>Play movies quizes<br/>and earn<br/>free tickets</p>
+                <p>50k people are playing now</p>
+                <br/>
+                <p className="btn p-2 border-danger" style={{color:"deeppink", borderRadius:"20px",fontWeight:"bold"}}>Start playing</p>
+            </div>
+        </li>
+        <li>
+        <a href="" className="nav-link link-dark p-2">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <span className="p-4">Logout</span>
+            </a>
+        </li>
+        </ul>
+        <div className="" style={{marginLeft:"50px"}}>
+                <img data-testid="movie-poster-path" src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`} style={{height:"400px", width:"700px", padding:"0", margin:"0"}} alt="img1"/>
+                <h1 data-testid="movie-title">{movieDetails.title || movieDetails.original_name}</h1>
+                <p data-testid="movie-release-date">{movieDetails.release_date || movieDetails.first_air_date}</p>
+                <p data-testid="movie-runtime">{movieDetails.runtime || "0"} minutes</p>
+                <p data-testid="movie-overview">{movieDetails.overview}</p>
+            </div>
+                
         </div>
-        <br/>
-        <br/>
-            <h1 data-testid="movie-title">{movieDetails.title || movieDetails.original_name}</h1>
-            <p data-testid="movie-release-date">{movieDetails.release_date || movieDetails.first_air_date}</p>
-            <p data-testid="movie-runtime">{movieDetails.runtime || "0"} minutes</p>
-            <p data-testid="movie-overview">{movieDetails.overview}</p>
-        </div>
+  </div>  
+            
+        </>
+       
     );
 }
 
