@@ -29,8 +29,8 @@ const MovieDetails = () => {
 
     if(!movieDetails){
         return(
-            <div className="fluid-container m-4 p-4 bg-primary" style={{width: "200px", borderRadius:"20px"}}>
-                 <p className="m-4 text-white">Loading <i className="fa fa-hourglass-start"></i></p>
+            <div className="fluid-container m-4 p-4 " style={{backgroundColor:"pink",width: "200px", borderRadius:"20px"}}>
+                 <p className="m-4 text-black">Loading <i className="fa fa-hourglass-start"></i></p>
             </div>
            
         ) 

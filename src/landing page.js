@@ -47,7 +47,7 @@ const LandingPage = () => {
                             <p>Loading...</p>
                         ): (
                         movieData.map((movie) => (
-                                <Link to={`/movies/${movie.id}`} key={movie.id} style={{textDecoration:"none"}}>
+                                <Link to={`/${movie.id}`} style={{textDecoration:"none"}}>
                                                 <div key={movie.id} data-testid="movie-card" className="movie-card" style={{width: '20rem', marginTop: "20px", marginLeft:"20px"}}>
                                                     <img data-testid="movie-poster" className="movie-poster" src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title}/>
                                                     <div className="movie-details">
